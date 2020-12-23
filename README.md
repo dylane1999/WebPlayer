@@ -1,1 +1,1 @@
-create react app with styled components and a global style on App
+my version of create react app with styled components + global styling included

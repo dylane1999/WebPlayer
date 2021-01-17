@@ -135,7 +135,11 @@ const PlayerControls = ({audioFile}) => {
     const updateProgress = () => setCurrentTime(currentTime + .1)
     if (currentTime < 3 && Playing) {
       setTimeout(updateProgress, 125)
+      if(currentTime >= 3){
+        setCurrentTime(0) 
+      }
     }
+    
   }, [currentTime])
 
 
